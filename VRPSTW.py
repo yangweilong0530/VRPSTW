@@ -37,8 +37,8 @@ class Sol:
 
 def read_data():
     sol = Sol()
-    file_path = 'C101.txt'
-    data = open(file_path, 'r')
+    file_path = "C101.txt"
+    data = open(file_path, "r")
     line_count = 0
     for line in data:
         line_count += 1
@@ -147,7 +147,7 @@ def plot(sol):
     plt.show()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = read_data()
     init_code(sol)
     print(get_cost(sol))
@@ -161,4 +161,4 @@ if __name__ == '__main__':
     plt.show()
     plot(best_sol)
     print([best_sol.path[i].name for i in range(len(best_sol.path))])
-    print('best_cost:', best_sol.cost)
+    print("best_cost:", best_sol.cost)
