@@ -1,4 +1,5 @@
 from gurobipy import Model,GRB,quicksum
+from matplotlib import pyplot as plt
 import numpy as np
 
 xc=[0,5,1,6,2,4,7]
@@ -13,3 +14,5 @@ C2=1
 C3=10
 Q=10
 model=Model()
+plt.scatter(xc,yc,s=10)
+plt.show()
